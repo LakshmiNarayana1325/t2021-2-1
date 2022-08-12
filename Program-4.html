@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+               
+        <h3>Result</h3>
+        <p id="result"></p>
+    </body>
+    <script>
+        var data="",count=0
+     var arr=[1,4,6,5,9,10,30,26,35,199]
+     
+        for(i=1;i<=9;i++)
+        {
+            arr.forEach((item)=>{
+                if(item%i==0)
+            {
+            console.log(item)
+                count++
+            }
+            }
+           
+            )
+             console.log(count)
+             
+           
+           data=data+i+":"+count+"<br/>"
+            
+            count=0
+        }
+    document.getElementById('result').innerHTML=data
+
+    </script>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input id="num1"></input>
+        <button onclick="series()">Display</button>
+        
+        <br></br>
+        <h3>Series</h3>
+        <p id="result"></p>
+    </body>
+    <script>
+ function series(){
+    var a=parseInt(document.getElementById('num1').value)
+    var data;
+    Loop1:
+    
+        for(i=0;i<=100;i++)
+        {
+            if(i%2!=0)
+            {
+                data=data+"<span>"+i+"</span>"
+                a--;
+                if(a == 0)
+                {
+                    break Loop1
+                }
+            }
+        }
+    document.getElementById('result').innerHTML=data
+    }
+
+    </script>
+</html>
